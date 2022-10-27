@@ -1,0 +1,12 @@
+[
+    {
+        "name" : "Start IoT 5.0 Landing Page", 
+        "description" : "This web page was selected between other five to represent Start IoT 5.0 project, a disruptive project wich I was part of, proposed by my city council and supported by the European Social Found.",
+        "source": "https://obradoirolugo.com/",
+        "stack": "Javascript, HTML, CSS and Bootstrap",
+        "frontPage" : "https://raw.githubusercontent.com/migueldcdev/portfolio-images/main/iot.png?token=GHSAT0AAAAAABZ7R25DXJIIWHRKTPP5GX6KY2LCMTQ",
+        "captureOne": "",
+        "captureTwo": "",
+        "type": "web"
+    }
+]

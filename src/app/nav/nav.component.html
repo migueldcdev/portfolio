@@ -1,0 +1,43 @@
+<div *ngIf="isBreakPointSmall" class="container w-full bg-white dark:bg-black flex p-5 fixed z-50 font-roboto">
+    <div class="container w-1/2">
+        <app-dropdown-menu [currentRoute]="currentRoute"></app-dropdown-menu>
+    </div>
+    <div class="container w-1/2 grid justify-items-end">
+        <app-toggle-mode></app-toggle-mode>
+    </div>
+</div>
+
+<div *ngIf="!isBreakPointSmall"
+    class="container bg-white dark:bg-black flex p-5 md:w-3/5 lg:w-2/5 mx-auto fixed inset-x-0 z-50 font-roboto">
+    <div class="container w-2/5 grid justify-items-start">
+        <a routerLink="/">
+            <p class="font-bold text-2xl text-dark dark:text-white hover:cursor-pointer">
+                <span class="material-icons-outlined hover:rotate-12">interests</span>
+                <span class="inline-block align-top font-lobster">
+                    &nbsp;Miguel DC
+                </span>
+            </p>
+        </a>
+    </div>
+    <div class="container w-2/5 grid justify-items-strech text-black dark:text-white">
+        <div class="flex">
+
+            <a *ngIf="currentRoute == '/'" routerLink="/portfolio">
+                <p class="p-2 transition ease-in-out hover:underline hover:cursor-pointer hover:-translate-y-1 hover:font-bold">Portfolio</p>
+            </a>
+
+            <a *ngIf="currentRoute != '/'" routerLink="/">
+                <p class="p-2 transition ease-in-out hover:underline hover:cursor-pointer hover:-translate-y-1 hover:font-bold">About</p>
+            </a>
+
+            <a>
+                <p class="p-2 transition ease-in-out hover:underline hover:cursor-pointer hover:-translate-y-1 hover:font-bold">
+                    Source</p>
+            </a>
+        </div>
+    </div>
+    <div class="container w-1/4 grid justify-items-end">
+        <app-toggle-mode></app-toggle-mode>
+    </div>
+
+</div>

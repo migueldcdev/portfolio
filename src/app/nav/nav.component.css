@@ -1,0 +1,7 @@
+.blur {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    -o-backdrop-filter: blur(3px);
+    -ms-backdrop-filter: blur(3px);
+}

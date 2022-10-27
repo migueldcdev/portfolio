@@ -1,0 +1,13 @@
+<div class="container grid w-full md:w-3/5 lg:w-2/5 mx-auto pt-44 md:pt-40 font-roboto">  
+    <p class="text-black dark:text-white text-center text-2xl"><a [routerLink]="['/portfolio']" class="text-base text-cyan-500">Portfolio > </a><span class="underline decoration-cyan-500">{{ project?.title }}</span></p>
+    <p class="text-black dark:text-white mt-10 p-2">{{ project?.description }}</p>
+    <div class="mt-5 text-black dark:text-white p-2">
+        <p><span class="underline decoration-cyan-500">Source:</span><a href="{{ project?.source }}" target="_blank"> {{ project?.source }} <span class="material-icons text-cyan-500">link</span></a></p>
+        <p><span class="underline decoration-cyan-500 mt-5">Stack:</span> {{ project?.stack }}</p>
+        <p><span class="underline decoration-cyan-500 mt-5">Type:</span> {{ project?.type }}</p>
+    </div>
+    <div class="grid grid-cols-1 gap-10 mt-10 p-5">
+        <img src="{{ project?.captureOne }}" class="rounded md:w-3/5 mx-auto">
+        <img src="{{ project?.captureTwo }}" class="rounded md:w-3/5 mx-auto">
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <button *ngIf="darkModeEnable == 'true'" class="bg-yellow-200 hover:bg-yellow-400 text-black pt-4 pb-2 pr-4 pl-4 md:pt-2 md:pb-0 md:pr-2 md:pl-2 rounded" type="button" (click)="toggleMode()">
+        <span class="material-icons-outlined">wb_sunny</span>              
+    </button>
+    
+    <button *ngIf="darkModeEnable != 'true'" class="bg-indigo-500 hover:bg-indigo-700 text-white pt-4 pb-2 pr-4 pl-4 md:pt-2 md:pb-0 md:pr-2 md:pl-2 rounded" type="button" (click)="toggleMode()">
+        <span class="material-icons text-white">nightlight</span>  
+    </button>
+</div>
+
