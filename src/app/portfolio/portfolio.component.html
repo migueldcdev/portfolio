@@ -2,9 +2,9 @@
     <div class="bg-slate-500 dark:bg-slate-900 rounded w-3/5 md:w-2/5 mx-auto p-2">
         <p class="text-white text-2xl text-center">Portfolio</p>
     </div>
-    <div class="grid md:grid-cols-2 mt-20">
+    <div class="grid md:grid-cols-2">
         <a *ngFor="let project of projects" [routerLink]="['/portfolio', project.id]">
-        <div class="hover:cursor-pointer">
+        <div class="hover:cursor-pointer mt-20">
             <img src="{{ project.frontPage }}" class="rounded max-w-xs w-56 mx-auto">
             <p class="text-black dark:text-white text-center mt-5 text-lg">{{ project.title }}</p>
             <p class="text-black dark:text-white text-center mt-5 text-sm w-56 mx-auto">{{ project.description }}</p>
